@@ -1,0 +1,88 @@
+#header{
+    width: 100%;
+    background-color: #2b78e4;
+    height: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+#back{
+    width: 100%;
+    background-color: 	#778899;
+    height: 700px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+
+#product{
+    width: 80%;
+    background-color: 	white;
+    height:80%;
+}
+
+#prize{
+    float: left;
+    width: 100%;
+    background-color: 	#2b78e4;
+    height:20%;
+    align-items:center;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+#product{
+    float: left;
+    border:1px;
+    width: 80%;
+    background-color: 	white;
+    height:80%;
+
+}
+
+#text{
+    float:left;
+    border:1px;
+    width: 50%;
+    background-color: 	white;
+    height:80%;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+#img{
+    width: 50%;
+    background-color: 	white;
+    height:80%;
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+
+#table_top{
+    width: 100%;
+    margin: 10px;
+    text-align:center;
+}
+
+
+
+table{
+    width: 100%;
+    margin: 10px;
+}
+
+button{
+    width:200px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-color: green;
+}
