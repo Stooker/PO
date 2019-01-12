@@ -1,5 +1,4 @@
 <?php
-
 require_once('Cart.php');
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -13,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>'Apteka - Rodzinna'</title>
+    <title>Apteka - Rodzinna</title>
 </head>
 
 <div id="header">
@@ -22,9 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <td>
                 <button>Zaloguj</button>
             </td>
-            <td  style="width:80% "><h1>Dostępny asortyment</h1></td>
+            <td style="width:80% "><h1>Dostępny asortyment</h1></td>
             <td>
-                <button>Zobacz koszyk</button>
+                <a href="cart_viev.php">
+                    <button>Zobacz koszyk</button>
+                </a>
             </td>
         </tr>
     </table>
@@ -51,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         echo "<td><img src='img/" . $item['ZDJECIE'] . "'></td>";
         echo "<td>" . $item['NAZWA_TOWARU'] . "</td>";
         echo "<td>" . Product::calc_bruttto($item['CENA_NETTO'], $item['PROCENT_VAT']) . "</td>";
-        echo "<td><input type='number' name='ilosc'><input type='hidden' name='id' value='" . $item['ID_TOWARU'] . "'></td>";
+        echo "<td><input type='number' name='ilosc' value='1'><input type='hidden' name='id' value='" . $item['ID_TOWARU'] . "'></td>";
         echo "<td><button type='submit'>Dodaj do koszyka</button><a href='details.php?id=" . $item['ID_TOWARU'] . "'> <button type='button' >Zobacz szczegóły</button></a></td>";
         echo "</form>";
         echo "</tr>\n";
