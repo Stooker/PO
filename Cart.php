@@ -24,11 +24,11 @@ class Cart
         $cart[$id] = get($cart[$id], 0) + $ilosc;
     }
 
-    static function delete($id, $ilosc)
+    static function remove($id)
     {
         $cart = &self::get_cart();
 
-        $cart[$id] = get($cart[$id], 0) + $ilosc;
+        unset($cart[$id]);
     }
 
 
@@ -49,7 +49,6 @@ class Cart
             $ids .= $id . ',';
         }
         $ids = rtrim($ids, ",");
-        var_dump($cart, $ids);
 
         $stid = oci_parse(DBConnection::get_connection(), 'SELECT * FROM Towary WHERE id_towaru IN(' . $ids . ')');
         oci_execute($stid);

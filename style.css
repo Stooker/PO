@@ -1,25 +1,26 @@
-.list{
+.list {
     width: 100%;
 
 }
 
-.list th{
+.list th {
     background-color: #2b78e4;
     height: 50px;
     font-size: 25px;
 
 }
 
-.list tr:nth-child(odd){
+.list tr:nth-child(odd) {
     background-color: #97c5f8;
 
 }
 
-.list td{
+.list td {
     text-align: center;
 
 }
-.list tr:nth-child(even){
+
+.list tr:nth-child(even) {
     background-color: white;
 }
 
@@ -28,13 +29,13 @@ img {
     width: 100px;
 }
 
-.header{
+.header {
     width: 100%;
     background-color: grey;
     height: 80px;
-    display:flex;
-    justify-content:center;
-    align-items:center
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 table {
@@ -43,21 +44,25 @@ table {
 
 }
 
-#head td{
+#head td {
     width: 33%;
 }
 
-#head{
+#head {
     background-color: grey;
-    displa:block;
-    width:100%;
+    displa: block;
+    width: 100%;
     text-align: center;
 }
 
-button{
-    width:200px;
+button {
+    width: 200px;
     height: 50px;
     background-color: green;
     color: white;
     border-color: green;
+}
+
+button.warning {
+    background-color: red;
 }
