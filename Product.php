@@ -5,7 +5,7 @@
  * Date: 10.01.2019
  * Time: 20:57
  */
-require_once('DbConncection.php');
+require_once('DBConnection.php');
 class Product
 {
     private $con;
@@ -16,7 +16,7 @@ class Product
     public function __construct()
     {
 
-        $this->con = DbConncection::get_connection();
+        $this->con = DBConnection::get_connection();
     }
 
 

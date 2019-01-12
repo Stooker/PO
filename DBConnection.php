@@ -6,12 +6,12 @@
  * Time: 20:59
  */
 
-class DbConncection
+class DBConnection
 {
     static function get_connection()
     {
         $config = include('config.php');
-        $conn = oci_connect($config['db_user'], $config['db_password'], $config['DbConncection']);
+        $conn = oci_connect($config['db_user'], $config['db_password'], $config['db_connection']);
 
         if (!$conn) {
             $e = oci_error();

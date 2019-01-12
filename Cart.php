@@ -7,7 +7,7 @@ session_start();
  * Date: 10.01.2019
  * Time: 22:31
  */
-require_once('DbConncection.php');
+require_once('DBConnection.php');
 
 function get(&$var, $default=null) {
     return isset($var) ? $var : $default;
@@ -51,7 +51,7 @@ class Cart
         }
         $ids = rtrim($ids, ",");
 
-        $stid = oci_parse(DbConncection::get_connection(), 'SELECT * FROM Towary WHERE id_towaru IN('.$ids.')');
+        $stid = oci_parse(DBConnection::get_connection(), 'SELECT * FROM Towary WHERE id_towaru IN('.$ids.')');
         oci_execute($stid);
 
         oci_fetch_all($stid, $res, 0, -1,OCI_FETCHSTATEMENT_BY_ROW + OCI_ASSOC );
