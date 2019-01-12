@@ -1,6 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 .list {
     width: 100%;
-
 }
 
 .list th {
@@ -69,4 +72,30 @@ button.warning {
 
 .to-right {
     float: right;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.form-row:nth-child(odd) {
+    background-color: #97c5f8;
+}
+
+.form-row:nth-child(even) {
+    background-color: white;
+}
+
+.form-row.right {
+    justify-content: flex-end;
 }

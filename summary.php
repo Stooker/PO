@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     ?>
 
-    <form action="summary.php" method="post">
+    <form action="summary.php" method="post" class="full-width">
         <div class="form-row">
             <label for="adres_do_wysylki">Wprowadź adres do wysyłki</label>
             <input type="text" name="adres_do_wysylki" id="adres_do_wysylki" required>
@@ -74,7 +74,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <select name="rabat" id="rabat"></select>
         </div>
 
-        <button type="submit">Potwierdzam wprowadzone dane</button>
+        <div class="form-row right">
+            <button type="submit" class="to-right">Potwierdzam wprowadzone dane</button>
+        </div>
     </form>
 </div>
 </body>
