@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     foreach ($res as $item) {
 
         echo "<tr>\n";
-        echo " <form method=\"POST\" action=\"cart_viev.php\">";
+        echo "<form method='post' action='cart_view.php'>";
         echo "<td><img src='img/" . $item['ZDJECIE'] . "'></td>";
         echo "<td>" . $item['NAZWA_TOWARU'] . "</td>";
         echo "<td>" . Product::calc_bruttto($item['CENA_NETTO'], $item['PROCENT_VAT']) . "</td>";
@@ -50,9 +50,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     ?>
 
-    <a href="summary.php" class="to-right">
-        <button>Zamawiam i płacę</button>
-    </a>
+    <div class="form-row right">
+        <a href="summary.php">
+            <button>Zamawiam i płacę</button>
+        </a>
+    </div>
 </div>
 </body>
 </html>

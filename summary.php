@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <div class="header">
     <button>Zaloguj</button>
     <h1>Zamówienie</h1>
-    <a href="cart_viev.php">
+    <a href="cart_view.php">
         <button>Wróć do koszyka</button>
     </a>
 </div>

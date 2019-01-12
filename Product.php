@@ -35,7 +35,7 @@ class Product
 
     function get_details($id){
 
-        $stid = oci_parse($this->con, 'SELECT zdjecie, nazwa_towaru, opis, cena_netto, procent_vat  FROM Towary WHERE id_towaru ='.$id);
+        $stid = oci_parse($this->con, 'SELECT *  FROM Towary WHERE id_towaru ='.$id);
         oci_execute($stid);
 
         oci_fetch_all($stid, $res, 0, -1,OCI_FETCHSTATEMENT_BY_ROW + OCI_ASSOC );

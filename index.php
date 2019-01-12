@@ -4,8 +4,6 @@ require_once('Cart.php');
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     Cart::add($_POST['id'], $_POST['ilosc']);
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <div class="header">
     <button>Zaloguj</button>
     <h1>Dostępny asortyment</h1>
-    <a href="cart_viev.php">
+    <a href="cart_view.php">
         <button>Zobacz koszyk</button>
     </a>
 </div>
