@@ -66,3 +66,7 @@ button {
 button.warning {
     background-color: red;
 }
+
+.to-right {
+    float: right;
+}
