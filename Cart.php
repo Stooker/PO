@@ -44,6 +44,11 @@ class Cart
     static function get_cart_detail()
     {
         $cart = self::get_cart();
+
+        if (empty($cart)) {
+            return $cart;
+        }
+
         $ids = '';
         foreach ($cart as $id => $ilosc) {
             $ids .= $id . ',';
@@ -64,5 +69,9 @@ class Cart
         }
 
         return $res;
+    }
+
+    static function clear() {
+        unset($_SESSION['cart']);
     }
 }
