@@ -16,20 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <title>Apteka - Rodzinna</title>
 </head>
 
-<div id="header">
-    <table id="head">
-        <tr>
-            <td>
-                <button>Zaloguj</button>
-            </td>
-            <td style="width:80% "><h1>Zamówienie</h1></td>
-            <td>
-                <a href="cart_viev.php">
-                    <button>Wróć do koszyka</button>
-                </a>
-            </td>
-        </tr>
-    </table>
+<div class="header">
+    <button>Zaloguj</button>
+    <h1>Zamówienie</h1>
+    <a href="cart_viev.php">
+        <button>Wróć do koszyka</button>
+    </a>
 </div>
 <div>
 

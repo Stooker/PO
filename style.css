@@ -32,34 +32,16 @@ img {
     width: 100px;
 }
 
-.header {
-    width: 100%;
-    background-color: grey;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
 table {
     border-collapse: collapse;
-
-
 }
 
-#head td {
-    width: 33%;
-}
-
-#head {
-    background-color: grey;
-    displa: block;
-    width: 100%;
-    text-align: center;
+td, th {
+    border: none;
 }
 
 button {
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     background-color: green;
     color: white;
@@ -98,4 +80,18 @@ button.warning {
 
 .form-row.right {
     justify-content: flex-end;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    line-height: 1;
 }

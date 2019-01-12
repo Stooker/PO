@@ -14,21 +14,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <link rel="stylesheet" href="style.css">
     <title>Apteka - Rodzinna</title>
 </head>
-
-<div id="header">
-    <table id="head">
-        <tr>
-            <td>
-                <button>Zaloguj</button>
-            </td>
-            <td style="width:80% "><h1>Dostępny asortyment</h1></td>
-            <td>
-                <a href="cart_viev.php">
-                    <button>Zobacz koszyk</button>
-                </a>
-            </td>
-        </tr>
-    </table>
+<body>
+<div class="header">
+    <button>Zaloguj</button>
+    <h1>Dostępny asortyment</h1>
+    <a href="cart_viev.php">
+        <button>Zobacz koszyk</button>
+    </a>
 </div>
 <div>
 
